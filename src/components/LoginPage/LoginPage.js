@@ -12,6 +12,12 @@ const LoginPage = () => {
         // Add authentication logic here
     };
 
+    const handleSignup = () => {
+        alert('Redirecting to Signup Page...');
+        // Add redirection logic here, e.g., React Router
+        // history.push('/signup');
+    };
+
     return (
         <div className="login-container">
             <h2>Login</h2>
@@ -38,6 +44,17 @@ const LoginPage = () => {
                 </div>
                 <button type="submit">Login</button>
             </form>
+
+            {/* Signup Button */}
+            <div className="signup-section">
+                <p>Don't have an account?</p>
+                <button
+                    className="signup-button"
+                    onClick={handleSignup}
+                >
+                    Signup
+                </button>
+            </div>
         </div>
     );
 };
